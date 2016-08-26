@@ -1,0 +1,42 @@
+<beer-form (beerAdded)='addNewBeer($event)'></beer-form>
+
+<div class="row">
+  <label class="col-md-1">Filter by</label>
+  <input type="text" [(ngModel)]='filter'>
+</div>
+<table class="table">
+  <thead *ngIf='beers && beers.length'>
+    <tr>
+      <th>
+        <button class="btn btn-primary"
+           (click)="toggleImage()">
+           {{showImage ? 'Hide' : 'Show'}} Image
+        </button>
+      </th>
+      <th>Beer</th>
+      <th>Price</th>
+      <th>Rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let beer of beers | beerFilter:filter">
+      <td>
+        <img *ngIf="showImage"
+             [src]="beer.imageUrl"
+             [title]="beer.name"
+             [style.width.px]="imageWidth"
+             [style.margin.px]="imageMargin">
+      </td>
+      <td class="vertical-center">{{beer.name}}</td>
+      <td class="vertical-center">{{beer.price | currency:'BRL':true:'1.2-2'}}</td>
+      <td class="vertical-center">
+        <beer-star [rating]='beer.rating'></beer-star>
+      </td>
+      <td>
+        <button (click)='deleteBeer(beer.id)' type="button" class="btn btn-default btn-sm">
+            <span class="glyphicon glyphicon-trash"></span>
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

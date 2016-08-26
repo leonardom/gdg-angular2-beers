@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Baden Baden Chocolate",
+    "price": 18.00,
+    "imageUrl": "http://www.papodebar.com/wp-content/uploads/2013/05/Garrafa-Baden-Baden-Chocolate-Beer.jpg",
+    "rating": 4
+  },
+  {
+    "id": 2,
+    "name": "Baden Baden 1999",
+    "price": 16.00,
+    "imageUrl": "http://www.cervejariavirtual.com.br/fotos/zoom/712fz1/cerveja-baden-baden-1999-600ml.jpg",
+    "rating": 5
+  },
+  {
+    "id": 3,
+    "name": "Baden Baden Red Ale",
+    "price": 16.00,
+    "imageUrl": "https://mpbeer.files.wordpress.com/2012/03/baden-baden-red-ale-double-red-ale-600-ml.jpg",
+    "rating": 5
+  },
+  {
+    "id": 4,
+    "name": "Colorado Demoiselle",
+    "price": 15.00,
+    "imageUrl": "http://thebeerplanet.vteximg.com.br/arquivos/ids/187351-1000-1000/Cerveja-Colorado-Demoiselle-600ml.jpg",
+    "rating": 5
+  },
+  {
+    "id": 5,
+    "name": "Colorado Indica",
+    "price": 15.00,
+    "imageUrl": "http://thebeerplanet.vteximg.com.br/arquivos/ids/175486-1000-1000/Cerveja-Colorado-Indica-600ml.jpg",
+    "rating": 5
+  }
+]

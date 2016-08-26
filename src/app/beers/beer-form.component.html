@@ -1,0 +1,39 @@
+<h2>{{title}}</h2>
+
+<form (ngSubmit)="onSubmit()" class="form-horizontal">
+  <div class="form-group">
+    <label class="control-label col-sm-2">Name:</label>
+    <div class="col-sm-3">
+      <input [(ngModel)]="beer.name" class="form-control" placeholder="Beer name">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2">Price:</label>
+    <div class="col-sm-2">
+      <input [(ngModel)]="beer.price" class="form-control" placeholder="0.00">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2">Image URL:</label>
+    <div class="col-sm-4">
+      <input [(ngModel)]="beer.imageUrl" class="form-control" placeholder="Image URL">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2">Rating:</label>
+    <div class="col-sm-3">
+      <select [(ngModel)]="beer.rating" class="form-control">
+        <option value="1">1 star</option>
+        <option value="2">2 stars</option>
+        <option value="3">3 stars</option>
+        <option value="4">4 stars</option>
+        <option value="5">5 stars</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Add Beer</button>
+    </div>
+  </div>
+</form>
